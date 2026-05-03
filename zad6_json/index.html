@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV - Dzianis Nazarchuk 66750</title>
+    <link rel="stylesheet" href="red.css?v=5">
+</head>
+<body>
+    <header>
+        <h1>Dzianis Nazarchuk 66750</h1>
+        <p>Student / Kierunek: Informatyka 3 rok</p>
+        <p>
+            Email: <a href="mailto:dnazarc1@stu.vistula.edu.pl">dnazarc1@stu.vistula.edu.pl</a> |
+            GitHub: <a href="https://github.com/66750DzianisNazarchuk" target="_blank">github.com/66750DzianisNazarchuk</a>
+        </p>
+    </header>
+
+    <div style="text-align: center; margin: 20px 0;">
+        <button id="btn-theme" style="padding: 10px; cursor: pointer;">Zmień motyw (Green / Red)</button>
+        <button id="btn-toggle" style="padding: 10px; cursor: pointer;">Ukryj/Pokaż Projekty</button>
+    </div>
+
+    <main>
+        <section>
+            <h2>Podsumowanie</h2>
+            <p>Jestem studentem 3 roku. Interesuję się technologiami webowymi i programowaniem. Chętnie zdobywam nową wiedzę i rozwijam swoje umiejętności w dziedzinie IT.</p>
+        </section>
+
+        <section>
+            <h2>Edukacja</h2>
+            <ul>
+                <li>
+                    <strong>Akademia Finansów i Biznesu Vistula</strong> (2023 - obecnie)<br>
+                    Kierunek: Informatyka<br>
+                    Numer albumu: 66750
+                </li>
+                <li>
+                    <strong>Brest Regional Lyceum named after P. M. Masherov</strong> (2019 - 2023)<br>
+                    Profil: ekonomiczny
+                </li>
+            </ul>
+        </section>
+
+        <section id="sekcja-projekty">
+            <h2>Doświadczenie / Projekty</h2>
+            <ul>
+                <li>
+                    <strong>Projekt studencki: CV w HTML</strong> (Obecnie)<br>
+                    Opis: Stworzenie własnego życiorysu.
+                </li>
+            </ul>
+        </section>
+
+        <section>
+            <h2>Umiejętności</h2>
+            <ul id="lista-umiejetnosci">
+            </ul>
+        </section>
+
+        <section>
+            <h2>Zainteresowania</h2>
+            <ul id="lista-zainteresowania">
+            </ul>
+        </section>
+
+        <section id="kontakt">
+            <h2>Kontakt</h2>
+            <form id="contact-form" novalidate>
+                <div class="form-group">
+                    <label for="imie">Imię:</label><br>
+                    <input type="text" id="imie" name="imie" placeholder="Wpisz imię">
+                    <span class="error-msg" id="error-imie"></span>
+                </div>
+                
+                <div class="form-group">
+                    <label for="nazwisko">Nazwisko:</label><br>
+                    <input type="text" id="nazwisko" name="nazwisko" placeholder="Wpisz nazwisko">
+                    <span class="error-msg" id="error-nazwisko"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="email">E-mail:</label><br>
+                    <input type="email" id="email" name="email" placeholder="np. jan@kowalski.pl">
+                    <span class="error-msg" id="error-email"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="wiadomosc">Wiadomość:</label><br>
+                    <textarea id="wiadomosc" name="wiadomosc" rows="4" placeholder="Twoja wiadomość..."></textarea>
+                    <span class="error-msg" id="error-wiadomosc"></span>
+                </div>
+
+                <button type="submit" id="btn-submit">Wyślij</button>
+                <p id="success-msg" style="color: green; display: none; font-weight: bold;">Formularz został poprawnie wysłany!</p>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js?v=3"></script>
+</body>
+</html>
